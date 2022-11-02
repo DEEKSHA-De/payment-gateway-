@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/purple_500"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:text="PayFI"
+            android:textSize="20dp"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/deeuser"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="Username"
+            android:textColorHint="#FFFBF6"
+            android:background="@drawable/custombutton"
+            />
+        <EditText
+            android:id="@+id/deepass"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="Password"
+            android:textColorHint="#FFFBF6"
+            android:background="@drawable/custombutton"/>
+        <Button
+            android:id="@+id/loginh"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="Log In"
+            android:textAllCaps="false"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custombutton2"
+            android:textColor="#FFFBF6"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#3fff"
+            android:layout_marginTop="15dp"/>
+        <Button
+            android:id="@+id/forgotl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#FFFBF6"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

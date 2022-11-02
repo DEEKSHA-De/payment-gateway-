@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="154dp"
+        android:layout_height="283dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.656">
+
+        <TextView
+            android:id="@+id/txtslctbnk"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Select Bank:"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/txtaccno"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="Account No.:"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/txtbranch"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:text="Branch:"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/txtifsc"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="IFSC:"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/txtupipin"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="UPI PIN:"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="223dp"
+        android:layout_height="302dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.624">
+
+        <Spinner
+            android:id="@+id/spnrbnk"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:entries="@array/bank" />
+
+        <EditText
+            android:id="@+id/edtaccno"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="Enter Account No."
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/edtbranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Branch Name"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/edtifsc"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:ems="10"
+            android:hint="Enter IFSC"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/edtupipin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter 6 Digit Pin "
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnbnksubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="44dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.892" />
+
+    <Button
+        android:id="@+id/btnbkdetproc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/ic_baseline_navigate_next_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toEndOf="@+id/btnbnksubmit"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtlblbankinfo"
+        android:layout_width="281dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="84dp"
+        android:gravity="center"
+        android:text="BANK DETAILS"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

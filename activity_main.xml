@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/purple_200">
+    <ImageView
+        android:layout_width="900dp"
+        android:layout_height="200dp"
+        android:src="@drawable/img_1"
+        android:layout_marginTop="80dp"/>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btmenu"
+        android:layout_marginBottom="-102dp">
+
+        <Button
+            android:layout_width="316dp"
+            android:layout_height="69dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="300dp"
+            android:text="Balance"
+            android:id="@+id/balance"
+            android:background="@drawable/round"
+            android:backgroundTint="@color/purple_500"
+            />
+
+
+        <Button
+            android:layout_width="314dp"
+            android:layout_height="69dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="380dp"
+            android:text="Contacts"
+            android:id="@+id/contacts"
+            android:background="@drawable/round"/>
+
+        <Button
+            android:layout_width="318dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="460dp"
+            android:text="Recharge"
+            android:id="@+id/recharge"
+            android:background="@drawable/round"/>
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu" />
+
+    //app:menu="@menu/top_menu"
+
+
+</RelativeLayout>

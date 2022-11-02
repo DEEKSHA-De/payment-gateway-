@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="400dp"
+        android:backgroundTint="@color/purple_200"
+        android:layout_height="600dp"
+        app:cardCornerRadius="100dp"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="times"
+            android:text="PayFi"
+            android:textAlignment="center"
+            android:textSize="50dp" />
+
+        <TextView
+            android:layout_below="@id/info_text"
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="25dp"
+            android:background="@color/white"
+            app:cardCornerRadius="100dp"
+            android:fontFamily="times"
+            android:textStyle="bold"
+            android:text="             PayFi is an Indian digital payments and financial technology company headquartered in Manipal, Karnataka, India. PayFi was founded in November 21, by Shreenidhi,Deeksha,Deeksha Nayak,Chandhan,Rajdipto.The PayFi app, based on the Unified Payments Interface (UPI), went live in August 2016. It is owned by Flipkart, a subsidiary of Walmart."/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/img_1"/>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

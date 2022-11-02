@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PayFi</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="bank">
+        <item> Select Bank </item>
+        <item> ICICI </item>
+        <item> SBI </item>
+        <item> Canara Bank </item>
+        <item> HDFC </item>
+    </string-array>
+    <string name="bank">Select a Bank</string>
+    <string name="ifscsbi">IFSC:SBIN0004426</string>
+    <string name="ifscicici">IFSC:HDFC0001572</string>
+</resources>

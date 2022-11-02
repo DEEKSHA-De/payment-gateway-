@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/purple">
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/slider"
+        android:layout_width="430dp"
+        app:auto_cycle="true"
+        app:delay="0"
+        app:period="1000"
+        android:background="@color/design_default_color_on_primary"
+        app:corner_radius="5"
+        android:layout_height="200dp"></com.denzcoskun.imageslider.ImageSlider>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="248dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="-400dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginRight="80dp"
+        android:hint="Enter Mobile Number"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="248dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="-320dp"
+        android:layout_marginTop="300dp"
+        android:hint="Select Operator"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/filled"
+            android:inputType="none">
+        </Spinner>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="248dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="-250dp"
+        android:layout_marginTop="420dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Enter Amount">
+        <com.google.android.material.textfield.TextInputEditText
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="-170dp"
+        android:text="Reacharge"
+        android:theme="@style/Animation.Design.BottomSheetDialog"></Button>
+
+</LinearLayout>
